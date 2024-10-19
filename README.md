@@ -1,5 +1,3 @@
-# Elbrus Bootcamp Vite bundle
-
 ## React + Typescript + ESLint + Prettier
 
 Современный быстрый сборщик React проекта на Typescript с предустановленными настройками ESLint и Prettier от Elbrus Bootcamp.
@@ -78,12 +76,17 @@ npm run preview
 
 Если директория не `client` или `server`, то можно добавить соответствующую строчку в данный массив.
 
-## FAQ 
+## FAQ
 
 1. На windows из-под wsl Vite не следит за изменениями файлов
-Добавить в `vite.config`
+   Добавить в `vite.config`
 
 ```js
-server: { watch: { usePolling: true } }
+server: {
+  watch: {
+    usePolling: true;
+  }
+}
 ```
-Подробнее:  https://vitejs.dev/config/server-options.html#server-watch. 
+
+Подробнее: https://vitejs.dev/config/server-options.html#server-watch.
